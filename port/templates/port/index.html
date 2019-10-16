@@ -1,0 +1,20 @@
+<form action="port/btest/" method="post">{% csrf_token %}
+    <select name = "buyPatternName">
+        <option value = "PBR">PBR</option>
+        <option value = "PER">PER</option>
+    </select>
+    <select name = "buyPatternCondition">
+        <option value = ">">&gt;</option>
+        <option value = ">=">&gt;=</option>
+        <option value = "=">=</option>
+        <option value = "<">&lt;</option>
+        <option value = "<=">&lt;=</option>
+    </select>
+    <select name = "buyPatternValue">
+        <option value = "10">10</option>
+        <option value = "20">20</option>
+        <option value = "30">30</option>
+        <option value = "">직접입력</option>
+    </select>
+<input type="submit" value="백테스트" />
+</form>
