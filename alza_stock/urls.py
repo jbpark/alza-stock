@@ -21,5 +21,6 @@ urlpatterns = [
     url(r'^(?!.)', include('port.urls')),
     url(r'^port/', include('port.urls')),
     path('polls/', include('polls.urls')),
+    path('contacts/', include('contacts.urls')),
     path('admin/', admin.site.urls),
 ]

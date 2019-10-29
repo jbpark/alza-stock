@@ -17,9 +17,9 @@ class SmaCross(Strategy):
             self.sell()
 
 class BackTest():
-    def run_test(self):
+    def run_test(self, code, start_date, end_date):
         # 셀트리온, 2018년~2019년6월
-        data = fdr.DataReader('068270', '20180104', '20190630')
+        data = fdr.DataReader(code, start_date, end_date)
         print(data.head())
 
         # 초기투자금 10000, commission 비율 0.002 임의 지정
